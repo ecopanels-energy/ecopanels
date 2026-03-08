@@ -1,0 +1,61 @@
+.proyectos {
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #18385C;
+  background: #FFFFFF;
+  cursor: pointer;
+  color: #18385C;
+}
+
+.tabs button.active {
+  background: #18385C;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px #0f5c7559;
+  max-width: 400px;
+  width: 100%;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.titulo {
+  color: #18385C;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.ubicacion {
+  display: block;
+  margin: auto;
+  padding: 10px 12px 14px;
+  color: #000000;
+  font-size: clamp(15px, 2.5vw, 18px);
+}

@@ -1,0 +1,25 @@
+<section class="main-section">
+  <h1>PROYECTOS</h1>
+
+  <div class="grid">
+    <article class="card" *ngFor="let proyecto of proyectos">
+
+      <img 
+        [src]="proyecto.imagen"
+        [alt]="proyecto.alt"
+      >
+
+      <div class="card-content" *ngIf="proyecto.titulo || proyecto.ubicacion">
+        <h2 class="titulo" *ngIf="proyecto.titulo">
+          {{ proyecto.titulo }}
+        </h2>
+
+        <span class="ubicacion" *ngIf="proyecto.ubicacion">
+          {{ proyecto.ubicacion }}
+        </span>
+      </div>
+
+    </article>
+  </div>
+
+</section>

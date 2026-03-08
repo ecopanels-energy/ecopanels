@@ -1,0 +1,222 @@
+.slider-home {
+  margin-top: 50px;
+}
+
+.slider {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 20s infinite;
+}
+
+.slider-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+}
+
+.slider-content h1 {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(20px, 4vw, 40px);
+  color: #18385C;
+  background-color: #FFFFFF;
+}
+
+.slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slider img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.slider img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.slider img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.service-card {
+  position: relative;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+
+
+}
+
+.paneles {
+  background-image: url('/assets/images/paneles.jpg');
+}
+
+.electrolineras {
+  background-image: url('/assets/images/electrolineras.jpg');
+}
+
+.mantenimiento {
+  background-image: url('/assets/images/mantenimiento.jpg');
+}
+
+.interventoria {
+  background-image: url('/assets/images/interventoria.jpg');
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #18385CCC;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: clamp(1px, 0.3vw, 1px) solid #9ABF29;
+}
+
+.overlay h2 {
+  font-size: clamp(19px, 3.2vw, 25px);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.overlay p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item {
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  pointer-events: none;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-item img {
+  height: 35vw;
+  display: block;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(12px, 3vw, 28px);
+  transform: translateX(-50%);
+  background: #18385CCC;
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: clamp(10px, 1.6vw, 18px) clamp(14px, 2vw, 26px);
+  border-radius: 14px;
+  min-width: 200px;
+}
+
+.carousel-caption p {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.btn-whatsapp {
+  display: block;
+  margin: 20px auto auto auto;
+  padding: clamp(6px, 0.8vw, 10px) clamp(12px, 1.5vw, 20px);
+  background-color: #18385C;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: clamp(6px, 1vw, 14px);
+  transition: 0.3s ease;
+  max-width: 280px;
+  text-align: center;
+  border: solid 2px #18385C;
+}
+
+.btn-whatsapp:hover {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  color: #18385C;
+
+}
+
+.contact p{
+  text-align: center ;
+}
+
+@media (max-width: 900px) {
+  .slider {
+    height: 50vh;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    height: 350px;
+  }
+
+  .service-card {
+    margin: 1% 0%;
+  }
+.carousel-item img {
+  height: 45vw;
+}
+
+  .carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    transform: none;
+    border-radius: 0 14px 0 0;
+  }
+}
