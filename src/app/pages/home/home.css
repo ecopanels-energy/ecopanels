@@ -64,6 +64,12 @@
 }
 
 
+
+
+
+
+
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -73,30 +79,16 @@
 .service-card {
   position: relative;
   height: 330px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 10px;
-
-
+  overflow: hidden;
 }
 
-.paneles {
-  background-image: url('assets/images/paneles.jpg');
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
-
-.electrolineras {
-  background-image: url('assets/images/electrolineras.jpg');
-}
-
-.mantenimiento {
-  background-image: url('assets/images/mantenimiento.jpg');
-}
-
-.interventoria {
-  background-image: url('assets/images/interventoria.jpg');
-}
-
 
 .overlay {
   position: absolute;
@@ -112,18 +104,20 @@
   border: clamp(1px, 0.3vw, 1px) solid #9ABF29;
 }
 
-.overlay h2 {
-  font-size: clamp(19px, 3.2vw, 25px);
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
 
 .overlay p {
   line-height: 1.6;
   margin-bottom: 20px;
   max-width: 90%;
 }
+
+
+
+
+
+
+
+
 
 
 .carousel-inner {
