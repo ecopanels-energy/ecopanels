@@ -82,19 +82,19 @@
 }
 
 .paneles {
-  background-image: url('/assets/images/paneles.jpg');
+  background-image: url('assets/images/paneles.jpg');
 }
 
 .electrolineras {
-  background-image: url('/assets/images/electrolineras.jpg');
+  background-image: url('assets/images/electrolineras.jpg');
 }
 
 .mantenimiento {
-  background-image: url('/assets/images/mantenimiento.jpg');
+  background-image: url('assets/images/mantenimiento.jpg');
 }
 
 .interventoria {
-  background-image: url('/assets/images/interventoria.jpg');
+  background-image: url('assets/images/interventoria.jpg');
 }
 
 
