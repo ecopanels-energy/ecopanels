@@ -72,6 +72,9 @@
 }
 
 @media (max-width: 900px) {
+  .navbar{
+        border-bottom: none;
+  }
     .hamburger {
         display: block;
     }
@@ -79,15 +82,19 @@
     .menu {
         padding-top: 10px;
         position: absolute;
-        top: 60px;
+        top: 55px;
         right: 0;
         background: #18385C;
         flex-direction: column;
         width: 100%;
         display: none;
+        border-top: 1px solid #9ABF29;
     }
 
     .menu.open {
         display: flex;
     }
+.menu li:nth-child(5){
+padding-bottom: 10px;
 }
+  }
