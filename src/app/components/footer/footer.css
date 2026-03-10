@@ -132,6 +132,10 @@ footer {
     align-items: center;
   }
 
+  .colum1-footer img {
+  max-width: 100%;
+}
+
   .row-footer {
     min-width: 250px;
   }
