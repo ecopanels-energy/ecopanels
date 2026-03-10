@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 30px;
-    background: #18385C;
+    background: #2F3437;
     border-bottom: 1px solid #9ABF29;
     position: sticky;
     top: 0;
@@ -15,7 +15,7 @@
 }
 
 .logo img {
-    max-height: 40px;
+    max-height: 50px;
 }
 
 
@@ -51,18 +51,9 @@
     color: #9ABF29;
 }
 
-
-
-
-
-
 .dropdown {
     position: relative;
 }
-
-
-
-
 
 .hamburger {
     display: none;
@@ -78,13 +69,13 @@
     .hamburger {
         display: block;
     }
-
+    
     .menu {
         padding-top: 10px;
         position: absolute;
         top: 55px;
         right: 0;
-        background: #18385C;
+        background: #2F3437;
         flex-direction: column;
         width: 100%;
         display: none;
