@@ -1,10 +1,10 @@
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5rem;
-    margin: auto;
+    width: 100%;
 }
-
 .service-card {
     background: #FFFFFF;
     border-radius: 16px;
@@ -12,6 +12,7 @@
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
+    max-width: 500px;
 }
 
 .service-card img {

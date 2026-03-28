@@ -16,9 +16,10 @@ export class Proyectos {
   }
 
   proyectos = [
-    { titulo: '', ubicacion: '', imagen: 'assets/images/Proyecto1.png', alt: '' },
-    { titulo: '', ubicacion: '', imagen: 'assets/images/Proyecto2.png', alt: '' },
-    { titulo: '', ubicacion: '', imagen: 'assets/images/Proyecto3.png', alt: '' },
+    { titulo: 'SSFV on-grid 19,2 kWp', ubicacion: 'Copacabana, Antioquia', imagen: 'assets/images/Proyecto1.png', alt: '' },
+    { titulo: 'SSFV on-grid 5 kWp', ubicacion: 'Guarne, Antioquia', imagen: 'assets/images/Proyecto3.png', alt: '' },
+    { titulo: 'SSFV on-grid 3 kWp', ubicacion: 'Copacabana, Antioquia', imagen: 'assets/images/Proyecto2.png', alt: '' },
+
   ];
 
 }

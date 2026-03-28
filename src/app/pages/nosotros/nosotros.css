@@ -65,23 +65,22 @@
 }
 
 .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    display: flex; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: clamp(20px, 4vw, 50px);
+
     margin: clamp(15px, 4vw, 30px) auto;
     max-width: 1270px;
     border-bottom: 2px solid #18385C;
     padding-bottom: clamp(20px, 4vw, 40px);
-    justify-items: center;
 }
-
 .value-card {
+    flex: 0 1 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 .value-card img {
@@ -147,18 +146,19 @@
 
 
 .timeline {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 🔥 centra cada fila automáticamente */
     gap: 40px;
 }
-
 .timeline-step {
+    width: 250px; /* tamaño fijo bonito */
     background: #F0F8FF;
-padding: clamp(8px, 1.5vw, 14px);
+    padding: clamp(8px, 1.5vw, 14px);
     border-radius: 14px;
     border: 2px solid #18385C;
     transition: .25s;
+    text-align: center;
 }
 
 .timeline-step:hover {
